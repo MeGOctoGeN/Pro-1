@@ -79,6 +79,7 @@ The application will be available at `http://localhost:3000`
 - [API Documentation](docs/API.md)
 - [Monetization Strategy](MONETIZATION.md)
 - [Ads Core Integration](ads-core/README.md)
+- [AI Assistant (Grok AI)](ai-assistant/README.md)
 - [Contributing Guidelines](CONTRIBUTING.md)
 
 ## 💰 Monetization
@@ -99,6 +100,37 @@ The integrated ads core provides a flexible advertising framework. Key features:
 
 Learn more in the [Ads Core Documentation](ads-core/README.md)
 
+## 🤖 AI Assistant (Grok AI Integration)
+
+Powered by xAI's Grok API, our AI Assistant module brings intelligent automation to pharmacy management:
+
+### Features
+- 💊 **Customer Query Handler** - Answer medication questions with AI accuracy
+- 📦 **Inventory Prediction** - Forecast stock needs using historical data analysis
+- 📋 **Prescription Analytics** - Analyze prescription patterns and trends
+- 🏥 **Health Advice** - Provide general health guidance with proper disclaimers
+- 📢 **Marketing Content** - Generate compelling ad copy and product descriptions
+
+### Setup
+1. Get your xAI API key from [https://console.x.ai](https://console.x.ai)
+2. Add to your `.env` file:
+   ```bash
+   XAI_API_KEY=your_xai_api_key_here
+   ```
+3. Start using AI features:
+   ```javascript
+   const AIAssistant = require('./ai-assistant/src/index');
+   const assistant = AIAssistant.init({ apiKey: process.env.XAI_API_KEY });
+   ```
+
+### Privacy & Compliance
+- ✅ HIPAA compliant with automatic data anonymization
+- ✅ GDPR compliant with privacy-by-design principles
+- ✅ All health advice includes appropriate medical disclaimers
+- ✅ Emergency detection for critical situations
+
+Learn more in the [AI Assistant Documentation](ai-assistant/README.md)
+
 ## 🛠️ Technology Stack
 
 - **Backend**: Node.js, Express
@@ -107,6 +139,7 @@ Learn more in the [Ads Core Documentation](ads-core/README.md)
 - **Cache**: Redis
 - **Payment**: Stripe, PayPal
 - **Analytics**: Google Analytics, Custom Dashboard
+- **AI**: Grok AI by xAI - AI-powered features for intelligent pharmacy management
 
 ## 🤝 Contributing
 

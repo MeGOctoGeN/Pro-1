@@ -1,0 +1,27 @@
+{
+  "name": "@most-pharma-gro/ai-assistant",
+  "version": "1.0.0",
+  "description": "Grok AI integration for MOST-PHARMA-GRO - AI-powered features for pharmacy management",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0",
+    "example": "node examples/basic-usage.js"
+  },
+  "keywords": [
+    "ai",
+    "grok",
+    "xai",
+    "pharmacy",
+    "healthcare",
+    "assistant",
+    "automation"
+  ],
+  "author": "ELMOURABEA",
+  "license": "BSL-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ELMOURABEA/MOST-PHARMA-GRO.git"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
